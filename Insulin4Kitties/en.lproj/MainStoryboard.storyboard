@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12C60" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="kmk-rg-26E">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="BM9-FJ-A6m">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="kmk-rg-26E" sceneMemberID="viewController">
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackOpaque" id="EIH-52-49i">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="2" kind="relationship" relationship="rootViewController" id="5R7-ci-kac"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zAO-r4-6rs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1478" y="-88"/>
+        </scene>
+        <!--Insulin4 Kitties View Controller - Measure-->
+        <scene sceneID="4">
+            <objects>
+                <viewController id="2" customClass="Insulin4KittiesViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5">
+                        <rect key="frame" x="0.0" y="64" width="1024" height="704"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gMp-Xt-MY8">
+                                <color key="backgroundColor" name="controlShadowColor" catalog="System" colorSpace="catalog"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.29999999999999999"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="1280" id="9dB-MH-Ktm"/>
+                                    <constraint firstAttribute="height" constant="720" id="YEP-zA-lli"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="-.-- mL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d9o-V0-no0">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="BD8-xN-qb8"/>
+                                    <constraint firstAttribute="width" constant="340" id="tSL-LY-lZ1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" alpha="0.50000000000000011" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WJg-U7-dSE">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="116" id="B9R-Yx-2gA"/>
+                                    <constraint firstAttribute="width" constant="598" id="ubq-uH-ppk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <state key="normal" title="Toggle Measurement">
+                                    <color key="titleColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="StartCapture:" destination="2" eventType="touchUpInside" id="9pi-fH-dbi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AQe-uX-vb3">
+                                <rect key="contentStretch" x="0.0" y="1" width="1" height="1"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="4IK-xg-0DU" kind="push" id="tJq-vI-Cr4"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" alpha="0.60000000000000009" contentMode="scaleToFill" image="Syringe_Overlay.png" translatesAutoresizingMaskIntoConstraints="NO" id="eiz-ee-S9l">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="88" id="EDb-PW-sey"/>
+                                    <constraint firstAttribute="width" constant="600" id="Lqd-AO-qND"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="OpenCV_Logo_with_text.png" translatesAutoresizingMaskIntoConstraints="NO" id="BhN-JR-wYz">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="CSS-SW-auN"/>
+                                    <constraint firstAttribute="width" constant="81" id="Mk6-In-7e6"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.86858865489130432" green="0.86858865489130432" blue="0.86858865489130432" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="BhN-JR-wYz" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="2i5-dZ-dD7"/>
+                            <constraint firstItem="eiz-ee-S9l" firstAttribute="top" secondItem="5" secondAttribute="top" constant="200" id="4fr-Tl-oFg"/>
+                            <constraint firstAttribute="bottom" secondItem="WJg-U7-dSE" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="FhM-cC-b0h"/>
+                            <constraint firstItem="AQe-uX-vb3" firstAttribute="trailing" secondItem="WJg-U7-dSE" secondAttribute="trailing" type="default" id="HnN-9i-Che"/>
+                            <constraint firstItem="BhN-JR-wYz" firstAttribute="centerY" secondItem="WJg-U7-dSE" secondAttribute="centerY" type="default" id="LhQ-gv-LK6"/>
+                            <constraint firstItem="gMp-Xt-MY8" firstAttribute="centerX" secondItem="d9o-V0-no0" secondAttribute="centerX" type="default" id="M4n-2G-w2i"/>
+                            <constraint firstItem="WJg-U7-dSE" firstAttribute="top" secondItem="d9o-V0-no0" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="dKj-OF-cc8"/>
+                            <constraint firstItem="eiz-ee-S9l" firstAttribute="leading" secondItem="5" secondAttribute="leading" constant="354" id="feX-5Y-1kX"/>
+                            <constraint firstItem="d9o-V0-no0" firstAttribute="centerY" secondItem="AQe-uX-vb3" secondAttribute="centerY" type="default" id="gQ6-7d-N8x"/>
+                            <constraint firstItem="d9o-V0-no0" firstAttribute="centerX" secondItem="WJg-U7-dSE" secondAttribute="centerX" type="default" id="mox-UI-OGk"/>
+                            <constraint firstItem="gMp-Xt-MY8" firstAttribute="centerY" secondItem="5" secondAttribute="centerY" type="default" id="u9I-NS-KdL"/>
+                            <constraint firstItem="WJg-U7-dSE" firstAttribute="centerX" secondItem="5" secondAttribute="centerX" type="default" id="yG6-mk-ZsN"/>
+                        </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Measure" id="HDn-3l-LkJ"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="alignmentImage" destination="eiz-ee-S9l" id="kva-9h-0zb"/>
+                        <outlet property="captureButton" destination="WJg-U7-dSE" id="dBJ-9m-zIq"/>
+                        <outlet property="imageViewer" destination="gMp-Xt-MY8" id="RAl-0n-eKH"/>
+                        <outlet property="measurementText" destination="d9o-V0-no0" id="iZ8-6I-orZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-192" y="-88"/>
+        </scene>
+        <!--View Controller - Info Screen-->
+        <scene sceneID="zVc-tS-H4F">
+            <objects>
+                <viewController title="Info Screen" id="4IK-xg-0DU" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rdH-Io-inR">
+                        <rect key="frame" x="0.0" y="64" width="1024" height="704"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7he-ov-9iN">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="423" id="9g7-Q4-aRR"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" name="controlHighlightColor" catalog="System" colorSpace="catalog"/>
+                        <constraints>
+                            <constraint firstItem="7he-ov-9iN" firstAttribute="top" secondItem="rdH-Io-inR" secondAttribute="top" constant="20" symbolic="YES" type="default" id="mE9-3V-wjk"/>
+                            <constraint firstItem="7he-ov-9iN" firstAttribute="leading" secondItem="rdH-Io-inR" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="r9D-l8-bQk"/>
+                            <constraint firstAttribute="bottom" secondItem="7he-ov-9iN" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="wGu-si-MaJ"/>
+                        </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="About" id="XbE-eo-JU2"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VMw-dd-OPa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1145" y="-88"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="OpenCV_Logo_with_text.png" width="600" height="739"/>
+        <image name="Syringe_Overlay.png" width="3728" height="547"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

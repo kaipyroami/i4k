@@ -1,0 +1,570 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2703368C1693B9DF0014E080 /* Untitled-iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 2703368B1693B9DF0014E080 /* Untitled-iPad.png */; };
+		2703368F1693B9E20014E080 /* Untitled-iPad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2703368E1693B9E20014E080 /* Untitled-iPad@2x.png */; };
+		270336911693D1040014E080 /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 270336901693D1040014E080 /* Default-Portrait~ipad.png */; };
+		270336931693D10B0014E080 /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 270336921693D10B0014E080 /* Default-Portrait@2x~ipad.png */; };
+		270336951693D1150014E080 /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 270336941693D1150014E080 /* Default-Landscape@2x~ipad.png */; };
+		270336971693D11E0014E080 /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 270336961693D11E0014E080 /* Default-Landscape~ipad.png */; };
+		270C6B2016A4AF4900E8BB4B /* Syringe_Overlay.png in Resources */ = {isa = PBXBuildFile; fileRef = 270C6B1F16A4AF4900E8BB4B /* Syringe_Overlay.png */; };
+		270C6B2316A4F4D600E8BB4B /* haarcascade_FF.xml in Resources */ = {isa = PBXBuildFile; fileRef = 270C6B2116A4F4D600E8BB4B /* haarcascade_FF.xml */; };
+		270C6B2416A4F4D600E8BB4B /* haarcascade_TF.xml in Resources */ = {isa = PBXBuildFile; fileRef = 270C6B2216A4F4D600E8BB4B /* haarcascade_TF.xml */; };
+		2714D73916B8B6D100E85533 /* haarcascade_FF_2.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2714D73716B8B6D100E85533 /* haarcascade_FF_2.xml */; };
+		2714D73A16B8B6D100E85533 /* haarcascade_TF_2.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2714D73816B8B6D100E85533 /* haarcascade_TF_2.xml */; };
+		274CF8261699600200D422D5 /* InfoScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 274CF8251699600200D422D5 /* InfoScreenViewController.m */; };
+		274E9C06169E8690009CA5D5 /* OpenCV_Logo_with_text.png in Resources */ = {isa = PBXBuildFile; fileRef = 274E9C05169E8690009CA5D5 /* OpenCV_Logo_with_text.png */; };
+		27D12DFF169205A400F5DCF8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27D12DFE169205A400F5DCF8 /* UIKit.framework */; };
+		27D12E01169205A400F5DCF8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27D12E00169205A400F5DCF8 /* Foundation.framework */; };
+		27D12E03169205A400F5DCF8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27D12E02169205A400F5DCF8 /* CoreGraphics.framework */; };
+		27D12E09169205A400F5DCF8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 27D12E07169205A400F5DCF8 /* InfoPlist.strings */; };
+		27D12E0B169205A400F5DCF8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D12E0A169205A400F5DCF8 /* main.m */; };
+		27D12E0F169205A400F5DCF8 /* Insulin4KittiesAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D12E0E169205A400F5DCF8 /* Insulin4KittiesAppDelegate.m */; };
+		27D12E11169205A400F5DCF8 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 27D12E10169205A400F5DCF8 /* Default.png */; };
+		27D12E13169205A400F5DCF8 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27D12E12169205A400F5DCF8 /* Default@2x.png */; };
+		27D12E15169205A400F5DCF8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27D12E14169205A400F5DCF8 /* Default-568h@2x.png */; };
+		27D12E18169205A400F5DCF8 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27D12E16169205A400F5DCF8 /* MainStoryboard.storyboard */; };
+		27D12E1B169205A400F5DCF8 /* Insulin4KittiesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D12E1A169205A400F5DCF8 /* Insulin4KittiesViewController.m */; };
+		27D12E23169205A400F5DCF8 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27D12E22169205A400F5DCF8 /* SenTestingKit.framework */; };
+		27D12E24169205A400F5DCF8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27D12DFE169205A400F5DCF8 /* UIKit.framework */; };
+		27D12E25169205A400F5DCF8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27D12E00169205A400F5DCF8 /* Foundation.framework */; };
+		27D12E2D169205A400F5DCF8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 27D12E2B169205A400F5DCF8 /* InfoPlist.strings */; };
+		27D12E30169205A400F5DCF8 /* Insulin4KittiesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D12E2F169205A400F5DCF8 /* Insulin4KittiesTests.m */; };
+		27D12E3A16920C5100F5DCF8 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27D12E3916920C5100F5DCF8 /* opencv2.framework */; };
+		27D12E3C1692395300F5DCF8 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27D12E3B1692395300F5DCF8 /* Accelerate.framework */; };
+		27D12E3E1692396000F5DCF8 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27D12E3D1692396000F5DCF8 /* AssetsLibrary.framework */; };
+		27D12E401692396500F5DCF8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27D12E3F1692396500F5DCF8 /* AVFoundation.framework */; };
+		27D12E421692398C00F5DCF8 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27D12E411692398C00F5DCF8 /* CoreImage.framework */; };
+		27D12E441692399A00F5DCF8 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27D12E431692399A00F5DCF8 /* CoreMedia.framework */; };
+		27D12E46169239A300F5DCF8 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27D12E45169239A300F5DCF8 /* CoreVideo.framework */; };
+		27D12E48169239B300F5DCF8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27D12E47169239B300F5DCF8 /* QuartzCore.framework */; };
+		27F59FEB16B6302600557554 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27F59FEA16B6302600557554 /* ImageIO.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		27D12E26169205A400F5DCF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27D12DF1169205A400F5DCF8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27D12DF9169205A400F5DCF8;
+			remoteInfo = Insulin4Kitties;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2703368B1693B9DF0014E080 /* Untitled-iPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Untitled-iPad.png"; path = "../Untitled-iPad.png"; sourceTree = "<group>"; };
+		2703368E1693B9E20014E080 /* Untitled-iPad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Untitled-iPad@2x.png"; path = "../Untitled-iPad@2x.png"; sourceTree = "<group>"; };
+		270336901693D1040014E080 /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Portrait~ipad.png"; path = "../Default-Portrait~ipad.png"; sourceTree = "<group>"; };
+		270336921693D10B0014E080 /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Portrait@2x~ipad.png"; path = "../Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
+		270336941693D1150014E080 /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape@2x~ipad.png"; path = "../Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
+		270336961693D11E0014E080 /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape~ipad.png"; path = "../Default-Landscape~ipad.png"; sourceTree = "<group>"; };
+		270C6B1F16A4AF4900E8BB4B /* Syringe_Overlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Syringe_Overlay.png; sourceTree = "<group>"; };
+		270C6B2116A4F4D600E8BB4B /* haarcascade_FF.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_FF.xml; sourceTree = "<group>"; };
+		270C6B2216A4F4D600E8BB4B /* haarcascade_TF.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_TF.xml; sourceTree = "<group>"; };
+		2714D73716B8B6D100E85533 /* haarcascade_FF_2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_FF_2.xml; sourceTree = "<group>"; };
+		2714D73816B8B6D100E85533 /* haarcascade_TF_2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_TF_2.xml; sourceTree = "<group>"; };
+		274CF8241699600200D422D5 /* InfoScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoScreenViewController.h; sourceTree = "<group>"; };
+		274CF8251699600200D422D5 /* InfoScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoScreenViewController.m; sourceTree = "<group>"; };
+		274E9C05169E8690009CA5D5 /* OpenCV_Logo_with_text.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OpenCV_Logo_with_text.png; sourceTree = "<group>"; };
+		27D12DFA169205A400F5DCF8 /* Insulin4Kitties.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Insulin4Kitties.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		27D12DFE169205A400F5DCF8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		27D12E00169205A400F5DCF8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		27D12E02169205A400F5DCF8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		27D12E06169205A400F5DCF8 /* Insulin4Kitties-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Insulin4Kitties-Info.plist"; sourceTree = "<group>"; };
+		27D12E08169205A400F5DCF8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		27D12E0A169205A400F5DCF8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		27D12E0C169205A400F5DCF8 /* Insulin4Kitties-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Insulin4Kitties-Prefix.pch"; sourceTree = "<group>"; };
+		27D12E0D169205A400F5DCF8 /* Insulin4KittiesAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Insulin4KittiesAppDelegate.h; sourceTree = "<group>"; };
+		27D12E0E169205A400F5DCF8 /* Insulin4KittiesAppDelegate.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; path = Insulin4KittiesAppDelegate.m; sourceTree = "<group>"; };
+		27D12E10169205A400F5DCF8 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		27D12E12169205A400F5DCF8 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		27D12E14169205A400F5DCF8 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		27D12E17169205A400F5DCF8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		27D12E19169205A400F5DCF8 /* Insulin4KittiesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Insulin4KittiesViewController.h; sourceTree = "<group>"; };
+		27D12E1A169205A400F5DCF8 /* Insulin4KittiesViewController.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; path = Insulin4KittiesViewController.m; sourceTree = "<group>"; };
+		27D12E21169205A400F5DCF8 /* Insulin4KittiesTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Insulin4KittiesTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		27D12E22169205A400F5DCF8 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		27D12E2A169205A400F5DCF8 /* Insulin4KittiesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Insulin4KittiesTests-Info.plist"; sourceTree = "<group>"; };
+		27D12E2C169205A400F5DCF8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		27D12E2E169205A400F5DCF8 /* Insulin4KittiesTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Insulin4KittiesTests.h; sourceTree = "<group>"; };
+		27D12E2F169205A400F5DCF8 /* Insulin4KittiesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Insulin4KittiesTests.m; sourceTree = "<group>"; };
+		27D12E3916920C5100F5DCF8 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		27D12E3B1692395300F5DCF8 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		27D12E3D1692396000F5DCF8 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		27D12E3F1692396500F5DCF8 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		27D12E411692398C00F5DCF8 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		27D12E431692399A00F5DCF8 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		27D12E45169239A300F5DCF8 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		27D12E47169239B300F5DCF8 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		27F59FEA16B6302600557554 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		27D12DF7169205A400F5DCF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27F59FEB16B6302600557554 /* ImageIO.framework in Frameworks */,
+				27D12DFF169205A400F5DCF8 /* UIKit.framework in Frameworks */,
+				27D12E48169239B300F5DCF8 /* QuartzCore.framework in Frameworks */,
+				27D12E46169239A300F5DCF8 /* CoreVideo.framework in Frameworks */,
+				27D12E441692399A00F5DCF8 /* CoreMedia.framework in Frameworks */,
+				27D12E421692398C00F5DCF8 /* CoreImage.framework in Frameworks */,
+				27D12E03169205A400F5DCF8 /* CoreGraphics.framework in Frameworks */,
+				27D12E401692396500F5DCF8 /* AVFoundation.framework in Frameworks */,
+				27D12E3E1692396000F5DCF8 /* AssetsLibrary.framework in Frameworks */,
+				27D12E3C1692395300F5DCF8 /* Accelerate.framework in Frameworks */,
+				27D12E01169205A400F5DCF8 /* Foundation.framework in Frameworks */,
+				27D12E3A16920C5100F5DCF8 /* opencv2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27D12E1D169205A400F5DCF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27D12E23169205A400F5DCF8 /* SenTestingKit.framework in Frameworks */,
+				27D12E24169205A400F5DCF8 /* UIKit.framework in Frameworks */,
+				27D12E25169205A400F5DCF8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		27D12DEF169205A400F5DCF8 = {
+			isa = PBXGroup;
+			children = (
+				27D12E04169205A400F5DCF8 /* Insulin4Kitties */,
+				27D12E28169205A400F5DCF8 /* Insulin4KittiesTests */,
+				27D12DFD169205A400F5DCF8 /* Frameworks */,
+				27D12DFB169205A400F5DCF8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		27D12DFB169205A400F5DCF8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				27D12DFA169205A400F5DCF8 /* Insulin4Kitties.app */,
+				27D12E21169205A400F5DCF8 /* Insulin4KittiesTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		27D12DFD169205A400F5DCF8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				27F59FEA16B6302600557554 /* ImageIO.framework */,
+				27D12E47169239B300F5DCF8 /* QuartzCore.framework */,
+				27D12E45169239A300F5DCF8 /* CoreVideo.framework */,
+				27D12E431692399A00F5DCF8 /* CoreMedia.framework */,
+				27D12E411692398C00F5DCF8 /* CoreImage.framework */,
+				27D12E3F1692396500F5DCF8 /* AVFoundation.framework */,
+				27D12E3D1692396000F5DCF8 /* AssetsLibrary.framework */,
+				27D12E3B1692395300F5DCF8 /* Accelerate.framework */,
+				27D12E3916920C5100F5DCF8 /* opencv2.framework */,
+				27D12DFE169205A400F5DCF8 /* UIKit.framework */,
+				27D12E00169205A400F5DCF8 /* Foundation.framework */,
+				27D12E02169205A400F5DCF8 /* CoreGraphics.framework */,
+				27D12E22169205A400F5DCF8 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		27D12E04169205A400F5DCF8 /* Insulin4Kitties */ = {
+			isa = PBXGroup;
+			children = (
+				27D12E0D169205A400F5DCF8 /* Insulin4KittiesAppDelegate.h */,
+				27D12E0E169205A400F5DCF8 /* Insulin4KittiesAppDelegate.m */,
+				27D12E16169205A400F5DCF8 /* MainStoryboard.storyboard */,
+				274CF8241699600200D422D5 /* InfoScreenViewController.h */,
+				274CF8251699600200D422D5 /* InfoScreenViewController.m */,
+				27D12E19169205A400F5DCF8 /* Insulin4KittiesViewController.h */,
+				27D12E1A169205A400F5DCF8 /* Insulin4KittiesViewController.m */,
+				27D12E05169205A400F5DCF8 /* Supporting Files */,
+			);
+			path = Insulin4Kitties;
+			sourceTree = "<group>";
+		};
+		27D12E05169205A400F5DCF8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2714D73716B8B6D100E85533 /* haarcascade_FF_2.xml */,
+				2714D73816B8B6D100E85533 /* haarcascade_TF_2.xml */,
+				270C6B2116A4F4D600E8BB4B /* haarcascade_FF.xml */,
+				270C6B2216A4F4D600E8BB4B /* haarcascade_TF.xml */,
+				270C6B1F16A4AF4900E8BB4B /* Syringe_Overlay.png */,
+				270336961693D11E0014E080 /* Default-Landscape~ipad.png */,
+				270336941693D1150014E080 /* Default-Landscape@2x~ipad.png */,
+				270336921693D10B0014E080 /* Default-Portrait@2x~ipad.png */,
+				270336901693D1040014E080 /* Default-Portrait~ipad.png */,
+				2703368E1693B9E20014E080 /* Untitled-iPad@2x.png */,
+				274E9C05169E8690009CA5D5 /* OpenCV_Logo_with_text.png */,
+				2703368B1693B9DF0014E080 /* Untitled-iPad.png */,
+				27D12E06169205A400F5DCF8 /* Insulin4Kitties-Info.plist */,
+				27D12E07169205A400F5DCF8 /* InfoPlist.strings */,
+				27D12E0A169205A400F5DCF8 /* main.m */,
+				27D12E0C169205A400F5DCF8 /* Insulin4Kitties-Prefix.pch */,
+				27D12E10169205A400F5DCF8 /* Default.png */,
+				27D12E12169205A400F5DCF8 /* Default@2x.png */,
+				27D12E14169205A400F5DCF8 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		27D12E28169205A400F5DCF8 /* Insulin4KittiesTests */ = {
+			isa = PBXGroup;
+			children = (
+				27D12E2E169205A400F5DCF8 /* Insulin4KittiesTests.h */,
+				27D12E2F169205A400F5DCF8 /* Insulin4KittiesTests.m */,
+				27D12E29169205A400F5DCF8 /* Supporting Files */,
+			);
+			path = Insulin4KittiesTests;
+			sourceTree = "<group>";
+		};
+		27D12E29169205A400F5DCF8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				27D12E2A169205A400F5DCF8 /* Insulin4KittiesTests-Info.plist */,
+				27D12E2B169205A400F5DCF8 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		27D12DF9169205A400F5DCF8 /* Insulin4Kitties */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27D12E33169205A400F5DCF8 /* Build configuration list for PBXNativeTarget "Insulin4Kitties" */;
+			buildPhases = (
+				27D12DF6169205A400F5DCF8 /* Sources */,
+				27D12DF7169205A400F5DCF8 /* Frameworks */,
+				27D12DF8169205A400F5DCF8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Insulin4Kitties;
+			productName = Insulin4Kitties;
+			productReference = 27D12DFA169205A400F5DCF8 /* Insulin4Kitties.app */;
+			productType = "com.apple.product-type.application";
+		};
+		27D12E20169205A400F5DCF8 /* Insulin4KittiesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27D12E36169205A400F5DCF8 /* Build configuration list for PBXNativeTarget "Insulin4KittiesTests" */;
+			buildPhases = (
+				27D12E1C169205A400F5DCF8 /* Sources */,
+				27D12E1D169205A400F5DCF8 /* Frameworks */,
+				27D12E1E169205A400F5DCF8 /* Resources */,
+				27D12E1F169205A400F5DCF8 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				27D12E27169205A400F5DCF8 /* PBXTargetDependency */,
+			);
+			name = Insulin4KittiesTests;
+			productName = Insulin4KittiesTests;
+			productReference = 27D12E21169205A400F5DCF8 /* Insulin4KittiesTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		27D12DF1169205A400F5DCF8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Insulin4Kitties;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Kyle Crockett";
+			};
+			buildConfigurationList = 27D12DF4169205A400F5DCF8 /* Build configuration list for PBXProject "Insulin4Kitties" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 27D12DEF169205A400F5DCF8;
+			productRefGroup = 27D12DFB169205A400F5DCF8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				27D12DF9169205A400F5DCF8 /* Insulin4Kitties */,
+				27D12E20169205A400F5DCF8 /* Insulin4KittiesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		27D12DF8169205A400F5DCF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27D12E09169205A400F5DCF8 /* InfoPlist.strings in Resources */,
+				27D12E11169205A400F5DCF8 /* Default.png in Resources */,
+				27D12E13169205A400F5DCF8 /* Default@2x.png in Resources */,
+				27D12E15169205A400F5DCF8 /* Default-568h@2x.png in Resources */,
+				27D12E18169205A400F5DCF8 /* MainStoryboard.storyboard in Resources */,
+				2703368C1693B9DF0014E080 /* Untitled-iPad.png in Resources */,
+				2703368F1693B9E20014E080 /* Untitled-iPad@2x.png in Resources */,
+				270336911693D1040014E080 /* Default-Portrait~ipad.png in Resources */,
+				270336931693D10B0014E080 /* Default-Portrait@2x~ipad.png in Resources */,
+				270336951693D1150014E080 /* Default-Landscape@2x~ipad.png in Resources */,
+				270336971693D11E0014E080 /* Default-Landscape~ipad.png in Resources */,
+				274E9C06169E8690009CA5D5 /* OpenCV_Logo_with_text.png in Resources */,
+				270C6B2016A4AF4900E8BB4B /* Syringe_Overlay.png in Resources */,
+				270C6B2316A4F4D600E8BB4B /* haarcascade_FF.xml in Resources */,
+				270C6B2416A4F4D600E8BB4B /* haarcascade_TF.xml in Resources */,
+				2714D73916B8B6D100E85533 /* haarcascade_FF_2.xml in Resources */,
+				2714D73A16B8B6D100E85533 /* haarcascade_TF_2.xml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27D12E1E169205A400F5DCF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27D12E2D169205A400F5DCF8 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		27D12E1F169205A400F5DCF8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		27D12DF6169205A400F5DCF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27D12E0B169205A400F5DCF8 /* main.m in Sources */,
+				27D12E0F169205A400F5DCF8 /* Insulin4KittiesAppDelegate.m in Sources */,
+				27D12E1B169205A400F5DCF8 /* Insulin4KittiesViewController.m in Sources */,
+				274CF8261699600200D422D5 /* InfoScreenViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27D12E1C169205A400F5DCF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27D12E30169205A400F5DCF8 /* Insulin4KittiesTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		27D12E27169205A400F5DCF8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27D12DF9169205A400F5DCF8 /* Insulin4Kitties */;
+			targetProxy = 27D12E26169205A400F5DCF8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		27D12E07169205A400F5DCF8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27D12E08169205A400F5DCF8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		27D12E16169205A400F5DCF8 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27D12E17169205A400F5DCF8 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		27D12E2B169205A400F5DCF8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27D12E2C169205A400F5DCF8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		27D12E31169205A400F5DCF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		27D12E32169205A400F5DCF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		27D12E34169205A400F5DCF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Insulin4Kitties/Insulin4Kitties-Prefix.pch";
+				INFOPLIST_FILE = "Insulin4Kitties/Insulin4Kitties-Info.plist";
+				OTHER_CFLAGS = "-fnested-functions";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		27D12E35169205A400F5DCF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Insulin4Kitties/Insulin4Kitties-Prefix.pch";
+				INFOPLIST_FILE = "Insulin4Kitties/Insulin4Kitties-Info.plist";
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"-fnested-functions",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		27D12E37169205A400F5DCF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Insulin4Kitties.app/Insulin4Kitties";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Insulin4Kitties/Insulin4Kitties-Prefix.pch";
+				INFOPLIST_FILE = "Insulin4KittiesTests/Insulin4KittiesTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		27D12E38169205A400F5DCF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Insulin4Kitties.app/Insulin4Kitties";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Insulin4Kitties/Insulin4Kitties-Prefix.pch";
+				INFOPLIST_FILE = "Insulin4KittiesTests/Insulin4KittiesTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		27D12DF4169205A400F5DCF8 /* Build configuration list for PBXProject "Insulin4Kitties" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27D12E31169205A400F5DCF8 /* Debug */,
+				27D12E32169205A400F5DCF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27D12E33169205A400F5DCF8 /* Build configuration list for PBXNativeTarget "Insulin4Kitties" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27D12E34169205A400F5DCF8 /* Debug */,
+				27D12E35169205A400F5DCF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27D12E36169205A400F5DCF8 /* Build configuration list for PBXNativeTarget "Insulin4KittiesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27D12E37169205A400F5DCF8 /* Debug */,
+				27D12E38169205A400F5DCF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 27D12DF1169205A400F5DCF8 /* Project object */;
+}
