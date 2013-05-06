@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="kmk-rg-26E">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="BM9-FJ-A6m">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="kmk-rg-26E" sceneMemberID="viewController">
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackOpaque" id="EIH-52-49i">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="2" kind="relationship" relationship="rootViewController" id="5R7-ci-kac"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zAO-r4-6rs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1478" y="-88"/>
+        </scene>
+        <!--Insulin4 Kitties View Controller - Measure-->
+        <scene sceneID="4">
+            <objects>
+                <viewController id="2" customClass="Insulin4KittiesViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5">
+                        <rect key="frame" x="0.0" y="64" width="1024" height="704"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gMp-Xt-MY8">
+                                <color key="backgroundColor" name="gridColor" catalog="System" colorSpace="catalog"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.29999999999999999"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="1280" id="E3p-HY-P5F"/>
+                                    <constraint firstAttribute="height" constant="720" id="yW8-N4-V0K"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="-.-- Units" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d9o-V0-no0">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="433" id="7xs-rb-4fG"/>
+                                    <constraint firstAttribute="height" constant="84" id="XDQ-tt-v8v"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" alpha="0.50000000000000011" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WJg-U7-dSE">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="598" id="F50-dp-mev"/>
+                                    <constraint firstAttribute="height" constant="116" id="Zc9-ts-m7N"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <state key="normal" title="Toggle Measurement">
+                                    <color key="titleColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="StartCapture:" destination="2" eventType="touchUpInside" id="9pi-fH-dbi"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" alpha="0.60000000000000009" contentMode="scaleToFill" image="Syringe_Overlay_Inverted.png" translatesAutoresizingMaskIntoConstraints="NO" id="eiz-ee-S9l">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="88" id="ptA-Xp-bSa"/>
+                                    <constraint firstAttribute="width" constant="600" id="vV2-5O-1yY"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="OpenCV_Logo_with_text.png" translatesAutoresizingMaskIntoConstraints="NO" id="BhN-JR-wYz">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="113" id="7Lj-0u-Avn"/>
+                                </constraints>
+                            </imageView>
+                            <progressView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Diy-rG-Sv4"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Sample Progress" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GC2-eD-km6">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="S22-Dt-XT6"/>
+                                    <constraint firstAttribute="width" constant="162" id="uqc-Cu-6kT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.86858865489130432" green="0.86858865489130432" blue="0.86858865489130432" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="eiz-ee-S9l" firstAttribute="centerX" secondItem="GC2-eD-km6" secondAttribute="centerX" type="default" id="32G-v1-fhb"/>
+                            <constraint firstItem="gMp-Xt-MY8" firstAttribute="centerY" secondItem="5" secondAttribute="centerY" type="default" id="4Qv-eu-JCV"/>
+                            <constraint firstItem="BhN-JR-wYz" firstAttribute="top" secondItem="WJg-U7-dSE" secondAttribute="top" type="default" id="A07-Tg-sSR"/>
+                            <constraint firstItem="GC2-eD-km6" firstAttribute="centerX" secondItem="Diy-rG-Sv4" secondAttribute="centerX" type="default" id="Mwa-uu-kff"/>
+                            <constraint firstItem="Diy-rG-Sv4" firstAttribute="leading" secondItem="5" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="NrT-yt-6ro"/>
+                            <constraint firstAttribute="bottom" secondItem="WJg-U7-dSE" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="OQ4-yh-GPX"/>
+                            <constraint firstAttribute="trailing" secondItem="Diy-rG-Sv4" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="T66-iu-A5N"/>
+                            <constraint firstAttribute="trailing" secondItem="BhN-JR-wYz" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="UK6-No-hQ6"/>
+                            <constraint firstAttribute="bottom" secondItem="BhN-JR-wYz" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="YDR-de-aC9"/>
+                            <constraint firstItem="Diy-rG-Sv4" firstAttribute="top" secondItem="5" secondAttribute="top" constant="20" symbolic="YES" type="default" id="ZGa-8M-8Bg"/>
+                            <constraint firstItem="WJg-U7-dSE" firstAttribute="top" secondItem="d9o-V0-no0" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="cSz-iT-eci"/>
+                            <constraint firstItem="GC2-eD-km6" firstAttribute="top" secondItem="Diy-rG-Sv4" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="hb7-tO-Ip8"/>
+                            <constraint firstItem="d9o-V0-no0" firstAttribute="centerX" secondItem="eiz-ee-S9l" secondAttribute="centerX" type="default" id="jwr-nf-EdE"/>
+                            <constraint firstItem="eiz-ee-S9l" firstAttribute="centerX" secondItem="gMp-Xt-MY8" secondAttribute="centerX" type="default" id="mhL-Ch-VgM"/>
+                            <constraint firstItem="d9o-V0-no0" firstAttribute="centerX" secondItem="WJg-U7-dSE" secondAttribute="centerX" type="default" id="w18-3w-rYD"/>
+                            <constraint firstItem="eiz-ee-S9l" firstAttribute="top" secondItem="5" secondAttribute="top" constant="230" id="ztG-Ff-ek7"/>
+                        </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Measure" id="HDn-3l-LkJ">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="Rxd-oj-Kc4">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="AQe-uX-vb3">
+                                <rect key="frame" x="999" y="11" width="18" height="20"/>
+                                <rect key="contentStretch" x="0.0" y="1" width="1" height="1"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.49439538043478259" green="0.49439538043478259" blue="0.49439538043478259" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="4IK-xg-0DU" kind="push" id="tJq-vI-Cr4"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="SampleProgressLabel" destination="GC2-eD-km6" id="wyL-mX-AIJ"/>
+                        <outlet property="alignmentImage" destination="eiz-ee-S9l" id="kva-9h-0zb"/>
+                        <outlet property="captureButton" destination="WJg-U7-dSE" id="dBJ-9m-zIq"/>
+                        <outlet property="captureProgress" destination="Diy-rG-Sv4" id="tyk-TX-pGu"/>
+                        <outlet property="imageViewer" destination="gMp-Xt-MY8" id="RAl-0n-eKH"/>
+                        <outlet property="measurementText" destination="d9o-V0-no0" id="iZ8-6I-orZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-192" y="-88"/>
+        </scene>
+        <!--View Controller - Info Screen-->
+        <scene sceneID="zVc-tS-H4F">
+            <objects>
+                <viewController title="Info Screen" id="4IK-xg-0DU" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rdH-Io-inR">
+                        <rect key="frame" x="0.0" y="64" width="1024" height="704"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7he-ov-9iN">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="423" id="CGR-qW-feQ"/>
+                                    <constraint firstAttribute="height" constant="99" id="VSm-f7-Zpf"/>
+                                </constraints>
+                                <string key="text">The I4K app takes a number of samples of the syringe. The progress of the sampling progress is shown in the bar on the top portion of the viewing screen.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RUH-93-seX">
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="63f-xP-pge"/>
+                                    <constraint firstAttribute="width" constant="481" id="kej-Hg-MhY"/>
+                                </constraints>
+                                <string key="text">To take a measurement press the "Toggle measurement" button on the bottom center of the viewing screen. An alignment box and viewing screen will be displayed. Fit the entire syringe within this box. </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jrM-Ov-v7V">
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="385" id="VkK-Km-jrn"/>
+                                </constraints>
+                                <string key="text">Measurements are best taken on a dark background. Each detected feature is shown by a circle. This aids in determining the best lighting and background for taking readings.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" text="The unit reading is displayed in the large red text below the measurement button. " translatesAutoresizingMaskIntoConstraints="NO" id="f5k-YR-0Jl">
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="262" id="t8X-y8-yKI"/>
+                                    <constraint firstAttribute="height" constant="80" id="ufz-Mt-22v"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="App GUI.png" translatesAutoresizingMaskIntoConstraints="NO" id="1uq-Pe-PpV">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="644" id="0Ed-po-N03"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.54752879993269543" green="0.81207970081335878" blue="0.89012889067331957" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="f5k-YR-0Jl" firstAttribute="trailing" secondItem="rdH-Io-inR" secondAttribute="trailing" type="default" id="8Zl-g6-R8e"/>
+                            <constraint firstAttribute="trailing" secondItem="jrM-Ov-v7V" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="EgC-d0-Nb5"/>
+                            <constraint firstItem="jrM-Ov-v7V" firstAttribute="top" secondItem="rdH-Io-inR" secondAttribute="top" constant="20" symbolic="YES" type="default" id="Hvd-0W-Atz"/>
+                            <constraint firstItem="7he-ov-9iN" firstAttribute="leading" secondItem="rdH-Io-inR" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="a4u-j2-GDL"/>
+                            <constraint firstItem="1uq-Pe-PpV" firstAttribute="top" secondItem="jrM-Ov-v7V" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="jRb-sr-rqJ"/>
+                            <constraint firstAttribute="bottom" secondItem="RUH-93-seX" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="lBE-I6-wpV"/>
+                            <constraint firstAttribute="bottom" secondItem="f5k-YR-0Jl" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="noj-fl-MyZ"/>
+                            <constraint firstItem="1uq-Pe-PpV" firstAttribute="top" secondItem="7he-ov-9iN" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="qKy-NS-vul"/>
+                            <constraint firstItem="RUH-93-seX" firstAttribute="leading" secondItem="rdH-Io-inR" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="sg7-JI-dLK"/>
+                            <constraint firstItem="7he-ov-9iN" firstAttribute="top" secondItem="rdH-Io-inR" secondAttribute="top" constant="20" symbolic="YES" type="default" id="xCC-2Y-bEd"/>
+                            <constraint firstItem="1uq-Pe-PpV" firstAttribute="centerX" secondItem="rdH-Io-inR" secondAttribute="centerX" type="default" id="ymQ-kc-zdn"/>
+                            <constraint firstItem="1uq-Pe-PpV" firstAttribute="centerY" secondItem="rdH-Io-inR" secondAttribute="centerY" type="default" id="yt3-as-j3i"/>
+                        </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="About" id="XbE-eo-JU2"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VMw-dd-OPa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1145" y="-88"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="App GUI.png" width="2048" height="1536"/>
+        <image name="OpenCV_Logo_with_text.png" width="600" height="739"/>
+        <image name="Syringe_Overlay_Inverted.png" width="3728" height="547"/>
+    </resources>
+    <classes>
+        <class className="Insulin4KittiesViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/Insulin4KittiesViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="StartCapture:"/>
+                <relationship kind="outlet" name="SampleProgressLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="alignmentImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="captureButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="captureProgress" candidateClass="UIProgressView"/>
+                <relationship kind="outlet" name="imageViewer" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="measurementText" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
