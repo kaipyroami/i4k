@@ -5,4 +5,4 @@ Automatically exported from code.google.com/p/i4k
 
 https://vimeo.com/197520496/
 
-[![Watch the video](static/i4k-gui.png)](https://vimeo.com/197520496/)
+[![Watch the video](https://raw.githubusercontent.com/kaipyroami/i4k/master/static/i4k-gui.png)](https://vimeo.com/197520496/)
